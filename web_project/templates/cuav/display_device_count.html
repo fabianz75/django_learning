@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device counts</title>
+</head>
+<body>
+    <h1>Device counts</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Vendor</th>
+                <th>Device</th>
+                <th>Measurments</th>
+                <!-- Add more columns for additional fields -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for device in devices %}
+                <tr>
+                    <td>{{ device.vendor }}</td>
+                    <td>{{ device.device }}</td>
+                    <td>{{ device.count }}</td>
+                    <!-- Add more cells for additional fields -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
