@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }, 'cuav':{
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME':BASE_DIR / 'cuav.db',
+        'NAME':BASE_DIR / 'db/cuav.db',
 
     },
 
