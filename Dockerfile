@@ -25,7 +25,7 @@ COPY . /app
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
 USER appuser
 
-VOLUME /app/web_project/db
+
 
 # During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
 CMD ["python", "web_project/manage.py", "runsslserver",  "--certificate", "web_project/cert.pem","--key","web_project/private-key.pem", "0.0.0.0:8000"]
